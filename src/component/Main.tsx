@@ -1,4 +1,3 @@
-
 import data from "../json/data.json";
 import { Product } from './Product';
 

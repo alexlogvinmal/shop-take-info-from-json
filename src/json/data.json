@@ -4,6 +4,7 @@
         "id": 1,
         "name": "Phone",
         "description": "Best phone ever 2023!",
+        "stock": "In Stock",
         "img1": "IMG1.jpg",
         "img2": "IMG2.jpg",
         "img3": "IMG3.jpg"
@@ -12,6 +13,7 @@
         "id": 2,
         "name": "TV",
         "description": "Best TV ever 2023!",
+        "stock": "In Stock",
         "img1": "IMG1.jpg",
         "img2": "IMG2.jpg",
         "img3": "IMG3.jpg"
@@ -20,6 +22,7 @@
         "id": 3,
         "name": "Person",
         "description": "Best person ever 2023!",
+        "stock": "NO",
         "img1": "IMG1.jpg",
         "img2": "IMG2.jpg",
         "img3": "IMG3.jpg"
