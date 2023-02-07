@@ -3,8 +3,6 @@ import { Product } from './Product';
 
 export function Main() {
 
-
-
   return (
     
     <div className="App">

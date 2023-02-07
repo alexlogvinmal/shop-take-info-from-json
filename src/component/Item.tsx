@@ -6,13 +6,13 @@ import data from "../json/data.json";
 export function Item() {
 
     const { id } = useParams();
-    let newdata;
+    let newdata=data.result;
     let error=true;
 
     if (id == undefined) {
         error=false;
     } else {
-        newdata = data.result.filter(e => e.id == +id)
+        newdata = newdata.filter(e => e.id == +id)
         if(newdata.length==0){
             error=false;
         }
@@ -20,7 +20,14 @@ export function Item() {
     console.log(newdata)
     return (
         <>
-        {error ?    <h1>NORM</h1> : <h1>ERROR</h1>}
+        {error ?  <>
+         <h1>{newdata[0].name}</h1>
+         <p>{newdata[0].stock}</p>
+         <p>{newdata[0].description}</p>
+        </> 
+        
+        
+        : <h1>PRODUCT NOT FOUND</h1>}
         </>
 
     );

@@ -1,6 +1,7 @@
 import { IProduct } from '../models';
 import './product.css';
 import { Link } from 'react-router-dom';
+
 interface ProductProps {
   data: IProduct
 
