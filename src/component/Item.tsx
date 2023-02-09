@@ -17,10 +17,11 @@ export function Item() {
             error=false;
         }
     }
-    console.log(newdata)
+    
     return (
         <>
-        {error ?  <>
+        {error ?  
+        <>
          <h1>{newdata[0].name}</h1>
          <p>{newdata[0].stock}</p>
          <p>{newdata[0].description}</p>
