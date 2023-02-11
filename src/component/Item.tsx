@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom';
 import './item.css';
 import data from "../json/data.json";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 export function Item() {
@@ -23,9 +25,10 @@ export function Item() {
     return (
         <>
             {error ?
-                <>
+                <div className='item-list'>
                     <div className='item-content'>
                         <div className='item-img-container'>
+                            <Link className='bttn-back' to={`/`}>Back</Link>
                             <img className='product-img' src={`${window.location.origin}/img/${dynamicimg}`} />
                             <div className='img-catalog'>
                                 <img className='product-img-catalog' onClick={e => Setdynamicimg(newdata[0].img1)} src={`${window.location.origin}/img/${newdata[0].img1}`} />
@@ -38,16 +41,15 @@ export function Item() {
                             <h1>{newdata[0].name}</h1>
                             <p>${newdata[0].price}</p>
                             <p>{newdata[0].stock}</p>
-                            <button>Buy Now</button>
+                            <button className='bttn-buy-now'>Buy Now</button>
                         </div>
                     </div>
-                    <div>
-                        <p>DESCRIPTION</p>
-
-                        {newdata[0].description.map(e => <p>{e}</p>)}
+                    <div className='item-description'>
+                        <p className='description'>DESCRIPTION</p>
+                        {newdata[0].description.map(e => <p className='text-of-description'>{e}</p>)}
                     </div>
 
-                </>
+                </div>
 
 
                 : <h1>PRODUCT NOT FOUND</h1>}
