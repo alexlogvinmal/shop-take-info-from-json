@@ -41,7 +41,7 @@ export function Item() {
                             <h1>{newdata[0].name}</h1>
                             <p>${newdata[0].price}</p>
                             <p>{newdata[0].stock}</p>
-                            <button className='bttn-buy-now'>Buy Now</button>
+                            <button className='bttn-buy-now'>Write to the seller</button>
                         </div>
                     </div>
                     <div className='item-description'>
