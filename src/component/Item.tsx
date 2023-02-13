@@ -39,9 +39,9 @@ export function Item() {
                         </div>
                         <div className='item-content2'>
                             <h1>{newdata[0].name}</h1>
-                            <p>${newdata[0].price}</p>
-                            <p>{newdata[0].stock}</p>
-                            <button className='bttn-buy-now'>Write to the seller</button>
+                            <p className='item-price'>${newdata[0].price}</p>
+                            <p className='item-stock'>{newdata[0].stock}</p>
+                            <a className='bttn-buy-now' href='https://t.me/tudassyuda' target='_blank'>Write to the seller</a>
                         </div>
                     </div>
                     <div className='item-description'>

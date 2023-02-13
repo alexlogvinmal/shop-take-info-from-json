@@ -107,3 +107,10 @@
     color: rgb(120, 210, 140) !important;
     border-color: rgb(120, 210, 140);
 }
+.item-price{
+    font-size: 50px;
+    font-weight: bold;
+}
+.item-stock{
+    color: #3f3f3f;
+}
