@@ -3,6 +3,7 @@ import { Main } from './component/Main';
 import { Routes, Route } from 'react-router-dom';
 import { Item } from './component/Item';
 import { NotFound } from './component/NotFound';
+import { Header } from './component/Header';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+    <Header/>
     <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/catalog/:id" element={<Item/>}/>
