@@ -27,3 +27,7 @@
 .content-container{
     width: 490px;
 }
+.product-name{
+    font-size: 20px;
+    font-weight:600;
+}

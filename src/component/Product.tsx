@@ -20,9 +20,9 @@ export function Product({ data }: ProductProps) {
             <img className='product-img' src={`${window.location.origin}/img/${data.img1}`} />
           </div>
           <div className='content-container'>
-            <p>{data.name}</p>
-            <p>${data.price}</p>
-            <p>Stock: <b>{data.stock}</b></p>
+            <p className='product-name'>{data.name}</p>
+            <b>${data.price}</b>
+            <p>Stock: <i>{data.stock}</i></p>
           </div>
         </div>
       </Link>
