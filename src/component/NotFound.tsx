@@ -1,8 +1,12 @@
-
+import './notfound.css';
 
 export function NotFound() {
 
   return (
-    <h1>Page Not Found</h1> 
+    <>
+    <p className="not-found">ERROR 404</p> 
+    <p className="not-found">Page Not Found</p> 
+    </>
+    
   );
 }
