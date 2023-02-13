@@ -8,8 +8,7 @@ export function Main() {
     <div className="App">
       {data.result.map(e => <Product data={e} key={e.id} />)}
     </div>
-    
-    
+      
   );
 }
 
